@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="Warmer_ImprovedWastelandBiome" />
+	<DisplayName value="Improved Wasteland Biome" />
+	<Description value="Improved decorations for Wasteland biome" />
+	<Author value="Warmer" />
+	<Version value="1.1.0.1" />
+	<Website value="" />
+	<SkipWithAntiCheat value="false" />
+</xml>

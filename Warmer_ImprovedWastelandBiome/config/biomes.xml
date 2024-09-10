@@ -1,0 +1,205 @@
+<config>
+<!--  *************** Changes made to all subbiomes of Wasteland biome  *******************************************************  -->
+<!-- Removing common elements from all sub biomes  -->
+<remove xpath="//biome[@name='wasteland']/subbiome/decorations/decoration[@blockname='treePineBurntLrg' and @prob='0.0006']"/>
+<remove xpath="//biome[@name='wasteland']/subbiome/decorations/decoration[@blockname='treeDeadPineLeaf']"/>
+<remove xpath="//biome[@name='wasteland']/subbiome/decorations/decoration[@blockname='scrapMetalPile']"/>
+<remove xpath="//biome[@name='wasteland']/subbiome/decorations/decoration[contains(@blockname,'brickShapes')]"/>
+<remove xpath="//biome[@name='wasteland']/subbiome/decorations/decoration[contains(@blockname,'cntBirdnest')]"/>
+<remove xpath="//biome[@name='wasteland']/subbiome/decorations/decoration[contains(@blockname,'cinderBlocks')]"/>
+<remove xpath="//biome[@name='wasteland']/subbiome/decorations/decoration[contains(@blockname,'treeBurntMaple')]"/>
+<remove xpath="//biome[@name='wasteland']/subbiome/decorations/decoration[@blockname='treeDeadTree02']"/>
+
+
+<!-- Changing probabilities across all sub biomes  -->
+<set xpath="//biome[@name='wasteland']/subbiome/decorations/decoration[contains(@name,'vein')]/@prob">0.01657</set>
+<set xpath="//biome[@name='wasteland']/subbiome/decorations/decoration[@blockname='carWrecksRandomHelper']/@prob">0.002</set>
+<set xpath="//biome[@name='wasteland']/subbiome/decorations/decoration[@blockname='treePineBurntLrg']/@prob">0.0008</set>
+<set xpath="//biome[@name='wasteland']/subbiome/decorations/decoration[@blockname='treePineBurntMed']/@prob">0.0008</set>
+<set xpath="//biome[@name='wasteland']/subbiome/decorations/decoration[@blockname='treePineBurntFullMed']/@prob">0.0005</set>
+<set xpath="//biome[@name='wasteland']/subbiome/decorations/decoration[@blockname='rock01']/@prob">0.01</set>
+<set xpath="//biome[@name='wasteland']/subbiome/decorations/decoration[@blockname='rock02']/@prob">0.01</set>
+<set xpath="//biome[@name='wasteland']/subbiome/decorations/decoration[@name='deco_remnant_stone_01']/@prob">0.05</set>
+<set xpath="//biome[@name='wasteland']/subbiome/decorations/decoration[@name='deco_remnant_stone_02']/@prob">0.053</set>
+<set xpath="//biome[@name='wasteland']/subbiome/decorations/decoration[@name='deco_remnant_stone_03']/@prob">0.053</set>
+<set xpath="//biome[@name='wasteland']/subbiome/decorations/decoration[@name='deco_remnant_stone_04']/@prob">0.052</set>
+<set xpath="//biome[@name='wasteland']/subbiome/decorations/decoration[@name='deco_remnant_stone_05']/@prob">0.052</set>
+<set xpath="//biome[@name='wasteland']/subbiome/decorations/decoration[@blockname='rubblePileBricks']/@prob">0.0024</set>
+<set xpath="//biome[@name='wasteland']/subbiome/decorations/decoration[@blockname='rubblePileBricksLong']/@prob">0.0024</set>
+<set xpath="//biome[@name='wasteland']/subbiome/decorations/decoration[@blockname='rubblePileBricksSmall']/@prob">0.0024</set>
+<set xpath="//biome[@name='wasteland']/subbiome/decorations/decoration[@blockname='rubblePileCement']/@prob">0.0024</set>
+
+<!-- Changing Loot helper -->
+<set xpath="//biome[@name='wasteland']/subbiome/decorations/decoration[@blockname='cntWastelandRandomLootHelper']/@blockname">cntBurntForestRandomLootHelper</set>
+
+
+<!-- Adding new deco to all sub biomes  -->
+<append xpath="//biome[@name='wasteland']/subbiome/decorations">
+                <decoration type="prefab" name="deco_remnant_wood_01" prob=".024"/>
+                <decoration type="prefab" name="deco_remnant_wood_02" prob=".024"/>
+                <decoration type="block" blockname="driftwood" prob="0.001" rotatemax="7"/>
+                <decoration type="block" blockname="driftwood2" prob="0.001" rotatemax="7"/>
+                <decoration type="block" blockname="driftwood3" prob="0.0005" rotatemax="7"/>			
+                <decoration type="block" blockname="treeBrownGrassDiagonal" prob=".5"/>
+                <decoration type="block" blockname="emberPileDeco1" prob="0.001" rotatemax="7"/>
+                <decoration type="block" blockname="emberPileDeco2" prob="0.001" rotatemax="7"/>
+                <decoration type="block" blockname="emberPileDeco3" prob="0.01" rotatemax="7"/>
+                <decoration type="block" blockname="emberPileDeco4" prob="0.01" rotatemax="7"/>				
+                <decoration type="block" blockname="carsRandomHelper" prob="0.01" rotatemax="3"/>
+                <decoration type="block" blockname="plantShrubDead" prob="0.0001" rotatemax="7"/>
+</append>
+
+
+
+<!--  *************** Changes made to Iron subbiome of Wasteland biome  *******************************************************  -->
+<!-- New code  -->
+<append xpath="//biome[@name='wasteland']/subbiome[1]/decorations">
+                <decoration type="block" blockname="treePineBurntLrg" prob="0.0008" rotatemax="7"/>
+                <decoration type="block" blockname="treePineBurntMed" prob="0.0008" rotatemax="7"/>
+                <decoration type="block" blockname="treePineBurntFullMed" prob="0.0005" rotatemax="7"/>
+                <decoration type="prefab" name="deco_remnant_stone_01" prob=".05"/>
+                <decoration type="prefab" name="deco_remnant_stone_02" prob=".053"/>
+                <decoration type="prefab" name="deco_remnant_stone_03" prob=".053"/>
+                <decoration type="prefab" name="deco_remnant_stone_04" prob=".052"/>
+                <decoration type="prefab" name="deco_remnant_stone_05" prob=".052"/>
+                <decoration type="block" blockname="cntBurntForestRandomLootHelper" prob="0.00025"/>
+                <decoration type="prefab" name="deco_rubble_stone_01" prob=".0065"/>
+                <decoration type="prefab" name="deco_rubble_stone_02" prob=".0065"/>
+                <decoration type="prefab" name="deco_rubble_stone_03" prob=".005"/>
+                <decoration type="prefab" name="deco_rubble_stone_04" prob=".003"/>
+                <decoration type="prefab" name="deco_rubble_stone_05" prob=".003"/>
+                <decoration type="prefab" name="deco_rubble_stone_06" prob=".0065"/>
+                <decoration type="prefab" name="deco_rubble_stone_07" prob=".0065"/>
+                <decoration type="prefab" name="deco_rubble_stone_08" prob=".0065"/>
+                <decoration type="prefab" name="deco_rubble_stone_09" prob=".003"/>
+                <decoration type="prefab" name="deco_rubble_stone_10" prob=".003"/>
+                <decoration type="block" blockname="mineCandyTin" prob="0.00015"/>
+                <decoration type="block" blockname="mineHubcap" prob="0.0001"/>
+                <decoration type="block" blockname="hubcapNoMine" prob="0.0011"/>
+                
+                <!-- *** New_Destruction_Blocks -->
+                <decoration type="block" blockname="rubblePileBricks" prob=".0024" rotatemax="7"/>
+                <decoration type="block" blockname="rubblePileBricksLong" prob=".0024" rotatemax="7"/>
+                <decoration type="block" blockname="rubblePileBricksSmall" prob=".0024" rotatemax="7"/>
+                <decoration type="block" blockname="rubblePileCement" prob=".0024" rotatemax="7"/>
+</append>
+
+<!--  *************** Changes made to decorations section (non subbiome) of Wasteland biome  *******************************************************  -->
+<!-- Removing elements  -->
+<remove xpath="//biome[@name='wasteland']/decorations/decoration[@blockname='treePineBurntLrg' and @prob='0.0006']"/>
+<remove xpath="//biome[@name='wasteland']/decorations/decoration[@blockname='treeDeadPineLeaf']"/>
+<remove xpath="//biome[@name='wasteland']/decorations/decoration[@blockname='scrapMetalPile']"/>
+<remove xpath="//biome[@name='wasteland']/decorations/decoration[contains(@blockname,'brickShapes')]"/>
+<remove xpath="//biome[@name='wasteland']/decorations/decoration[contains(@blockname,'cntBirdnest')]"/>
+<remove xpath="//biome[@name='wasteland']/decorations/decoration[contains(@blockname,'cinderBlocks')]"/>
+<remove xpath="//biome[@name='wasteland']/decorations/decoration[contains(@blockname,'treeBurntMaple')]"/>
+<remove xpath="//biome[@name='wasteland']/decorations/decoration[@blockname='treeDeadTree02']"/>
+
+
+<!-- Changing probabilities -->
+<set xpath="//biome[@name='wasteland']/decorations/decoration[contains(@name,'vein')]/@prob">0.01657</set>
+<set xpath="//biome[@name='wasteland']/decorations/decoration[@blockname='carWrecksRandomHelper']/@prob">0.002</set>
+<set xpath="//biome[@name='wasteland']/decorations/decoration[@blockname='treePineBurntLrg']/@prob">0.0008</set>
+<set xpath="//biome[@name='wasteland']/decorations/decoration[@blockname='treePineBurntMed']/@prob">0.0008</set>
+<set xpath="//biome[@name='wasteland']/decorations/decoration[@blockname='treePineBurntFullMed']/@prob">0.0005</set>
+<set xpath="//biome[@name='wasteland']/decorations/decoration[@blockname='rock01']/@prob">0.01</set>
+<set xpath="//biome[@name='wasteland']/decorations/decoration[@blockname='rock02']/@prob">0.01</set>
+<set xpath="//biome[@name='wasteland']/decorations/decoration[@name='deco_remnant_stone_01']/@prob">0.05</set>
+<set xpath="//biome[@name='wasteland']/decorations/decoration[@name='deco_remnant_stone_02']/@prob">0.053</set>
+<set xpath="//biome[@name='wasteland']/decorations/decoration[@name='deco_remnant_stone_03']/@prob">0.053</set>
+<set xpath="//biome[@name='wasteland']/decorations/decoration[@name='deco_remnant_stone_04']/@prob">0.052</set>
+<set xpath="//biome[@name='wasteland']/decorations/decoration[@name='deco_remnant_stone_05']/@prob">0.052</set>
+<set xpath="//biome[@name='wasteland']/decorations/decoration[@blockname='rubblePileBricks']/@prob">0.0024</set>
+<set xpath="//biome[@name='wasteland']/decorations/decoration[@blockname='rubblePileBricksLong']/@prob">0.0024</set>
+<set xpath="//biome[@name='wasteland']/decorations/decoration[@blockname='rubblePileBricksSmall']/@prob">0.0024</set>
+<set xpath="//biome[@name='wasteland']/decorations/decoration[@blockname='rubblePileCement']/@prob">0.0024</set>
+
+<!-- Changing Loot helper -->
+<set xpath="//biome[@name='wasteland']/decorations/decoration[@blockname='cntWastelandRandomLootHelper']/@blockname">cntBurntForestRandomLootHelper</set>
+
+<!-- Adding new deco to all sub biomes  -->
+<append xpath="//biome[@name='wasteland']/decorations">
+                <decoration type="prefab" name="deco_remnant_wood_01" prob=".024"/>
+                <decoration type="prefab" name="deco_remnant_wood_02" prob=".024"/>
+                <decoration type="block" blockname="driftwood" prob="0.001" rotatemax="7"/>
+                <decoration type="block" blockname="driftwood2" prob="0.001" rotatemax="7"/>
+                <decoration type="block" blockname="driftwood3" prob="0.0005" rotatemax="7"/>			
+                <decoration type="block" blockname="treeBrownGrassDiagonal" prob=".5"/>
+                <decoration type="block" blockname="emberPileDeco1" prob="0.001" rotatemax="7"/>
+                <decoration type="block" blockname="emberPileDeco2" prob="0.001" rotatemax="7"/>
+                <decoration type="block" blockname="emberPileDeco3" prob="0.01" rotatemax="7"/>
+                <decoration type="block" blockname="emberPileDeco4" prob="0.01" rotatemax="7"/>				
+                <decoration type="block" blockname="carsRandomHelper" prob="0.01" rotatemax="3"/>
+                <decoration type="block" blockname="plantShrubDead" prob="0.0001" rotatemax="7"/>
+</append>
+
+
+<!--  ***************  Adding a new sub biome to Wasteland biome  *******************************************************  -->
+<insertAfter xpath="//biome[@name='wasteland']/subbiome[4]">
+
+<!-- *** Wasteland: Bombed Culdesac Sub Biome: Bombed -->
+        <subbiome prob="0.8"> 
+            <layers>
+                <layer depth="2" blockname="terrDestroyedStone"/> <layer depth="2" blockname="terrDirt"/>
+                <layer depth="1" blockname="terrStone"> <resource blockname="terrGravel" prob="0.7830" rwgGenerationType="all"/> </layer>
+                <layer depth="*" blockname="terrStone">
+                    <resource blockname="terrOreIron" prob="0.6500" rwgGenerationType="all"/>
+                    <resource blockname="terrGravel" prob="0.7830" rwgGenerationType="all"/>
+                </layer>
+                <layer depth="3" blockname="terrBedrock"/>
+            </layers>
+            <decorations>
+                <decoration type="prefab" name="deco_iron_vein" checkresource="-7" onslopes="true" prob=".01657" rotatemax="3"/>
+                <decoration type="block" blockname="treePineBurntLrg" prob="0.0001" rotatemax="7"/>
+                <decoration type="block" blockname="treePineBurntMed" prob="0.0001" rotatemax="7"/>
+                <decoration type="block" blockname="treePineBurntFullMed" prob="0.0001" rotatemax="7"/>
+                <decoration type="prefab" name="deco_remnant_stone_01" prob=".2"/>
+                <decoration type="prefab" name="deco_remnant_stone_02" prob=".2"/>
+                <decoration type="prefab" name="deco_remnant_stone_03" prob=".2"/>
+                <decoration type="prefab" name="deco_remnant_stone_04" prob=".2"/>
+                <decoration type="prefab" name="deco_remnant_stone_05" prob=".2"/>
+                <decoration type="prefab" name="deco_remnant_wood_01" prob=".04"/>
+                <decoration type="prefab" name="deco_remnant_wood_02" prob=".04"/>
+                <decoration type="block" blockname="resourceRock01" prob=".00033" rotatemax="3"/>
+                <decoration type="block" blockname="resourceRock02" prob=".00033" rotatemax="3"/>
+                <decoration type="block" blockname="cntBurntForestRandomLootHelper" prob="0.00025"/>
+                <decoration type="block" blockname="rock01" prob=".01"/>
+                <decoration type="block" blockname="rock02" prob=".01"/>
+                <decoration type="block" blockname="driftwood" prob="0.001" rotatemax="7"/>
+                <decoration type="block" blockname="driftwood2" prob="0.001" rotatemax="7"/>
+                <decoration type="block" blockname="driftwood3" prob="0.0005" rotatemax="7"/>
+                <decoration type="block" blockname="treeBrownGrassDiagonal" prob=".5"/>
+                <decoration type="block" blockname="plantShrubDead" prob="0.0001" rotatemax="7"/>
+                <decoration type="block" blockname="emberPileDeco1" prob="0.001" rotatemax="7"/>
+                <decoration type="block" blockname="emberPileDeco2" prob="0.001" rotatemax="7"/>
+                <decoration type="block" blockname="emberPileDeco3" prob="0.01" rotatemax="7"/>
+                <decoration type="block" blockname="emberPileDeco4" prob="0.01" rotatemax="7"/>
+                <decoration type="prefab" name="deco_rubble_stone_01" prob=".0065"/>
+                <decoration type="prefab" name="deco_rubble_stone_02" prob=".0065"/>
+                <decoration type="prefab" name="deco_rubble_stone_03" prob=".005"/>
+                <decoration type="prefab" name="deco_rubble_stone_04" prob=".003"/>
+                <decoration type="prefab" name="deco_rubble_stone_05" prob=".003"/>
+                <decoration type="prefab" name="deco_rubble_stone_06" prob=".0065"/>
+                <decoration type="prefab" name="deco_rubble_stone_07" prob=".0065"/>
+                <decoration type="prefab" name="deco_rubble_stone_08" prob=".0065"/>
+                <decoration type="prefab" name="deco_rubble_stone_09" prob=".003"/>
+                <decoration type="prefab" name="deco_rubble_stone_10" prob=".003"/>
+                <decoration type="block" blockname="carsRandomHelper" prob="0.01" rotatemax="3"/>
+                <decoration type="block" blockname="carWrecksRandomHelper" prob="0.002" rotatemax="3"/>
+                <decoration type="block" blockname="treeBrownGrassDiagonal" prob=".05"/>
+                <decoration type="block" blockname="plantShrubDead" prob="0.0001" rotatemax="7"/>
+                <decoration type="block" blockname="mineCandyTin" prob="0.00015"/>
+                <decoration type="block" blockname="mineHubcap" prob="0.0001"/>
+                <decoration type="block" blockname="hubcapNoMine" prob="0.0011"/>
+                
+                <!-- *** New_Destruction_Blocks -->
+                <decoration type="block" blockname="rubblePileBricks" prob=".0024" rotatemax="7"/>
+                <decoration type="block" blockname="rubblePileBricksLong" prob=".0024" rotatemax="7"/>
+                <decoration type="block" blockname="rubblePileBricksSmall" prob=".0024" rotatemax="7"/>
+                <decoration type="block" blockname="rubblePileCement" prob=".0024" rotatemax="7"/>
+            </decorations>
+        </subbiome>
+</insertAfter>
+
+
+</config>
